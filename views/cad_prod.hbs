@@ -1,0 +1,36 @@
+<div class="bg-light p-5 rounded mt-3">
+    <h1>Cadastrar Produtos</h1>
+
+<div class="mb-3">
+
+     <form action="/insert_prod" method="post">
+      <div class="mb-3">
+        <label for="Descricao" class="form-label">Descrição</label>
+        <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Digite a Descrição">
+      </div>
+
+      <div class="mb-3">
+        <label for="preco" class="form-label">Preço de Venda</label>
+        <input type="real" class="form-control" id="preco" name="preco" placeholder="Digite o preço de Venda">
+      </div>
+       
+      <label for="vitrine" class="form-label">É de Vitrine?</label>
+      <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="vitrine" id="vitrine" value="true">
+      <label class="form-check-label" for="vitrine">Sim</label>
+      </div>
+      <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="vitrine" id="vitrine" value="false">
+      <label class="form-check-label" for="vitrine">Não</label>
+      </div>
+  
+       <div class="mb-3">
+        <label for="src_img" class="form-label">Caminho da Imagem (ex: /img/imagem.png)</label>
+        <input type="text" class="form-control" id="src_img" name="src_img" placeholder="Caminho da imagem">
+      </div>
+       <button class="btn btn-danger">Cadastrar</button>
+    </div>
+    </form>
+
+
+</div>

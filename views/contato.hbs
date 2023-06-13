@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Formulário de Contato</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <h2>Informações de Contato</h2>
+            <div class="mb-3">
+                <label for="razaoSocial" class="form-label">Razão Social:</label>
+                <input type="text" class="form-control" id="razaoSocial" value="Empresa XYZ Ltda" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="telefoneContato" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefoneContato" value="(00) 1234-5678" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="redesSociais" class="form-label">Redes Sociais:</label>
+                <input type="text" class="form-control" id="redesSociais" value="Facebook, Twitter, Instagram" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="emailContato" class="form-label">Email de Contato:</label>
+                <input type="email" class="form-control" id="emailContato" value="contato@empresa.com" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

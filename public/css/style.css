@@ -1,0 +1,104 @@
+/* Estilos para o cabeçalho da página */
+.text-section {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.display-4 {
+  color: #007bff;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a vitrine de produtos */
+.product-showcase {
+  padding: 50px 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.cor {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para o botão "Comprar" */
+.btn {
+  background-color: #FA2A38;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: center;
+}
+
+.btn:hover {
+  background-color: #FA2A38;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: center;
+}
+
+/* Estilos adicionais */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel-custom {
+  max-width: 100%; /* Defina a largura máxima desejada */
+  margin: 0 auto; /* Centraliza horizontalmente o carousel */
+}
+
+.carousel-custom .carousel-item img {
+  max-height: 800px; /* Defina a altura máxima desejada para as imagens do carousel */
+}
+
+     .card-img-top {
+            height: 400px;
+            object-fit: cover;
+        }

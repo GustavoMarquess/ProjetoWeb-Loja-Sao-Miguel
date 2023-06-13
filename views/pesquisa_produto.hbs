@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado da Pesquisa</title>
+</head>
+<body>
+    <div class="container my-4 font text-center">
+        <div class="rounded mt-3">
+            <h1>Resultado da Pesquisa</h1>
+            {{#if produtos.length}}
+            <div class="row">
+                {{#each produtos}}
+                <div class="col-md-4 mb-4">
+                    <div class="card border">
+                        <img src="{{this.src_img}}" class="rounded card-img-top" alt="Imagem do Produto">
+                        <div class="card-body">
+                            <h5 class="card-title">{{descricao}}</h5>
+                            <p class="card-text border-bottom">Preço: R$ {{preco}},00</p>
+                            <a href="#" class="btn btn-outline-danger">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{else}}
+            <div class="card mt-4">
+                <div class="card-body">
+                    Nenhum produto encontrado para essa descrição.
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <div class="row g-1">
+        <form action="/produtos">
+            <button class="w-100 btn btn-danger">Acessar Vitrine</button>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

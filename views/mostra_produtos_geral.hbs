@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container my-4 font text-center">
+        <div class="rounded mt-3">
+            <h1>Lista de Produtos</h1>
+            <div class="row">
+                {{#each produtos}}
+                <div class="col-md-4 mb-4">
+                    <div class="card border">
+                        <img src="{{src_img}}" class=" rounded card-img-top" alt="Imagem do Produto">
+                        <div class="card-body">
+                            <h5 class="card-title">{{descricao}}</h5>
+                            <p class="card-text border-bottom">Preço: R$ {{preco}},00</p>
+                            <a href="#" class="btn btn-outline-danger">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{#if table}}
+            {{else}}
+            <div class="card mt-4">
+                <div class="card-body">
+                    Nenhum dado encontrado!
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <div class="row g-1">
+
+      <form action="/produtos">
+      <button href="/produtos" class="w-100 btn btn-danger">Acessar Vitrine</button>
+      </form>
+  <!--   <li><a class="dropdown-item" href="/produtos">Teste Gabriely</a></li>-->
+      </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
